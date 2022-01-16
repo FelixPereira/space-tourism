@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/home/background-home-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+/* styling backdrop start*/
+.backdrop {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .9), rgba(0, 0, 0, .6));
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: none;
+}
+/* styling backdrop end */
+
+/* Styling mobile header start */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.header-navigation_desktop {
+  display: none;
+}
+
+.header-iconHumburger{
+  cursor: pointer;
+}
+
+.header-iconClose {
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+}
+
+ .header-navigation_mobile.hidden {
+   transform: translate(-200%);
+ }
+
+.header-navigation_mobile {
+  background: linear-gradient(to right, rgba(19, 21, 34, 1), rgba(83, 97, 124, 1), rgba(19, 37, 73, 1));
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 5px;
+  z-index: 2;
+  transition: 1s;
+}
+
+.header-navigation_mobile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.header span {
+  color: #fff;
+  font-weight: 600;
+  margin-right: 6px;
+  font-size: 13px;
+}
+
+.header a {
+  color: rgba(255, 255, 255, 0.753);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* Styling mpbile header ende */
+
+/* Styling header start */
+
+.explore {
+/*  padding: 200px 150px 100px; */
+  padding:  100px 20px 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.explore-text {
+  margin-bottom: 50px;
+}
+
+.explore-title {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-bottom: 19px;
+  color: #c3c6d8;
+  font-size: 15px;
+}
+
+.explore-title__big {
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-family: serif;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.explore-paragraph {
+  color: #abb0ca;
+  line-height: 1.9;
+  letter-spacing: 1.1px;
+  font-size: 14px;
+}
+
+.explore-btn a {
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4A4B4F;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: serif;
+  letter-spacing: 2px;
+  transition: ease-out .3s;
+}
+
+.explore-btn a:hover{
+  transform: scale(1.1);
+  transition: ease .5s
+}
+
+/* Styling header end */
+
+
+@media(min-width: 500px) {
+/* Styling desktop header start */
+  .header-iconHumburger {
+    display: none;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  
+  .header-logo {
+    width: 30%;
+  }
+  
+  .header-navigation_desktop {
+    width: 60%;
+    background: linear-gradient(to right, rgba(19, 21, 34, .3), rgba(83, 97, 124, 1), rgba(19, 37, 73, .8));
+    display: flex;
+    justify-content: center;
+    padding: 35px 0;
+  }
+  
+  .header-navigation_desktop ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    list-style: none;
+  }
+  
+  .header-navigation_desktop li:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+/* Styling desktop header end */
+  
+  body {
+    background-image: url("../images/home/background-home-desktop.jpg");
+  }
+
+  .explore {
+    padding: 100px 130px; 
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+    
+  .explore-text {
+    padding-right: 100px;
+  }
+    
+  .explore-title__big {
+    font-size: ;
+  }
+    
+  .explore-paragraph {
+    font-size: 1rem;
+  }
+  
+  .explore-btn a {
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+  }
+
+}
