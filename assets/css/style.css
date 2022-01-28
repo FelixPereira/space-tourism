@@ -51,11 +51,11 @@ body {
   display: none;
 }
 
- .header-navigation_mobile.hidden {
+ .header-navigation.hidden {
    transform: translate(-200%);
  }
 
-.header-navigation_mobile {
+.header-navigation {
   background: linear-gradient(to right, rgba(19, 21, 34, 1), rgba(83, 97, 124, 1), rgba(19, 37, 73, 1));
   display: flex;
   justify-content: center;
@@ -72,7 +72,7 @@ body {
   transition: 1s;
 }
 
-.header-navigation_mobile ul {
+.header-navigation ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,6 +152,7 @@ body {
   letter-spacing: 2px;
   transition: ease-out .3s;
 }
+
 
 .explore-btn a:hover{
   transform: scale(1.1);

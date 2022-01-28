@@ -3,7 +3,7 @@
 const IconHumburger = document.querySelector('.header-iconHumburger');
 const IconCloseMenu = document.querySelector('.header-iconClose');
 const BackDrop = document.querySelector('.backdrop');
-const headerMenu = document.querySelector('.header-navigation_mobile');
+const headerMenu = document.querySelector('.header-navigation');
 
 
 function showMenu() {
